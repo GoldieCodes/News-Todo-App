@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+  color: hsl(235, 19%, 35%);
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Josefin Sans", sans-serif;
+}
+/*Navigation Styles*/
+.logo h1 {
+  padding: 0.8em 0;
+  color: hsl(280deg 88.47% 28.41%);
+  letter-spacing: -1px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  background: rgb(248, 231, 248);
+}
+nav .nav-item {
+  color: rgb(13, 13, 49);
+  padding: 1em 0.8em;
+  text-decoration: none;
+  transition: all 600ms ease;
+}
+nav .nav-item:hover {
+  background-color: rgba(219, 177, 219, 0.678);
+  transition: all 600ms ease;
+}
+
+.active {
+  position: relative;
+}
+.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgb(187, 18, 187);
+}
+/*News Section Styles*/
+.news-wrapper {
+  display: flex;
+  width: 88%;
+  max-width: 1400px;
+  gap: 2em;
+  margin: 0 auto;
+}
+.container-ng {
+  width: 27%;
+  position: relative;
+}
+.container-us {
+  width: 70%;
+}
+.container-ng::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: hsla(295, 21%, 88%, 0.623);
+  position: absolute;
+  top: 0;
+  left: -5%;
+}
+.container-ng .article {
+  box-shadow: none;
+  border-width: 0 0 1px;
+  border-color: #c1949f;
+  border-style: solid;
+  padding: 1em 0.3em;
+  border-radius: 6px;
+  display: grid;
+  gap: 0.6em;
+  transition: all 500ms ease;
+}
+.container-ng .article:hover {
+  box-shadow: 0 0 25px rgba(199, 199, 199, 0.432);
+  padding-left: 1em;
+  transition: all 500ms ease;
+}
+.container-ng a {
+  text-decoration: none;
+  color: hsl(192, 96%, 38%);
+}
+.article a:hover {
+  color: rgb(187, 18, 187);
+}
+.container-ng .metadata {
+  color: inherit;
+  font-size: smaller;
+}
+.container-us .articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+.container-us div.img {
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+.container-us .article-img {
+  width: 100%;
+  position: absolute;
+  border-radius: 6px 6px 0 0;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.container-us .article {
+  width: 40%;
+  flex-grow: 1;
+  box-shadow: 0 0 12px rgba(199, 199, 199, 0.432);
+  border-radius: 6px;
+  display: grid;
+  gap: 0.6em;
+}
+.content {
+  padding: 1em;
+  display: grid;
+  gap: 0.6em;
+}
+.container-us .article h2 {
+  font-size: 1.1em;
+}
+.metadata {
+  display: flex;
+  gap: 0.3em;
+  color: rgb(187, 18, 187);
+}

@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.home-wrapper {
+  position: relative;
+  height: calc(100vh - 70px);
+  animation: gradient-dance 5s infinite;
+  overflow: hidden;
+  line-height: 1.3;
+}
+.home-wrapper::before {
+  position: absolute;
+  content: "";
+  bottom: 10%;
+  left: 5%;
+  width: 3%;
+  height: 5%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  filter: drop-shadow(2px 4px 6px rgb(101, 18, 101));
+}
+.home-wrapper::after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: 39%;
+  width: 5%;
+  height: 10%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  filter: drop-shadow(2px 4px 6px purple);
+}
+.glass {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  padding: 1em 1em 2em;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  display: grid;
+  gap: 1.7em;
+  z-index: 1;
+}
+
+.glass h1 {
+  color: rgb(165, 14, 165);
+  letter-spacing: -1px;
+}
+
+div.intro {
+  display: grid;
+  gap: 0.3em;
+}
+
+@keyframes gradient-dance {
+  0% {
+    background: linear-gradient(150deg, #fbc7d4, #bfe9ff);
+  }
+  35% {
+    background: linear-gradient(200deg, #fbc7d4, #bfe9ff);
+  }
+  65% {
+    background: linear-gradient(330deg, #fbc7d4, #bfe9ff);
+  }
+  100% {
+    background: linear-gradient(60deg, #fbc7d4, #bfe9ff);
+  }
+}
+div.buttons a {
+  font-size: 1em;
+  padding: 1rem;
+  border-radius: 50px;
+  background: hsl(192deg 91.3% 38.36%);
+  border: none;
+  color: white;
+  text-decoration: none;
+  opacity: 0.6;
+}
+div.buttons a:hover {
+  opacity: 1;
+}
+div.buttons a.github {
+  border: 1px solid rgb(187, 18, 187);
+  background: transparent;
+  color: initial;
+  margin-left: 10px;
+}
+div.glass ul {
+  display: flex;
+}
+div.glass ul li {
+  list-style: none;
+  padding: 10px;
+  background: #023d5c21;
+  border-radius: 7px;
+  margin: 5px;
+}
+.footer {
+  position: absolute;
+  bottom: 0.7em;
+  right: 50%;
+  transform: translateX(50%);
+  color: #5f4677;
+}
+.lottie svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.lottie {
+  position: absolute;
+  padding: 55vh;
+  top: 0;
+  right: 0;
+}
