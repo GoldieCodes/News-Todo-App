@@ -1,6 +1,5 @@
 import { Routes, Route, NavLink } from "react-router-dom"
 import Home from "./Home"
-import Blog from "./Blog"
 import Todo from "./Todo"
 import { TodoContextProvider } from "./TodoContext"
 import { ThemeContextProvider } from "./TodoContext"
@@ -24,7 +23,6 @@ const Nav = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/news" element={<Blog />} />
         <Route
           path="/todo"
           element={
