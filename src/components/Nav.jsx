@@ -16,7 +16,7 @@ const Nav = () => {
             Home
           </NavLink>
           <NavLink to="/todo" className="nav-item">
-            My To-Do
+            To-Do
           </NavLink>
         </div>
       </nav>

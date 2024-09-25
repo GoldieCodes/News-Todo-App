@@ -213,6 +213,6 @@ button.button-on {
 .drag-text {
   text-align: center;
   font-size: 0.9em;
-  margin-top: 4em;
+  margin-top: 2em;
   color: var(--footer-button);
 }

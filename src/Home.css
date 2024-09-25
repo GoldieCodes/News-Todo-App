@@ -38,7 +38,7 @@
 .glass {
   width: min(90%, 600px);
   position: relative;
-  margin: 0 3em;
+  margin: 0 5%;
   padding: 1em 1em 2em;
   background: rgba(255, 255, 255, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.4);
@@ -91,7 +91,7 @@ div.buttons a {
 div.buttons a:hover {
   opacity: 1;
 }
-div.buttons a.github {
+div.buttons a.linkedin {
   border: 1px solid rgb(187, 18, 187);
   background: transparent;
   color: initial;
@@ -99,6 +99,7 @@ div.buttons a.github {
 }
 div.glass ul {
   display: flex;
+  flex-wrap: wrap;
 }
 div.glass ul li {
   list-style: none;

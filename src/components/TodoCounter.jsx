@@ -9,9 +9,9 @@ function TodoCounter() {
         {filteredTodos.length == 0 ? (
           <p>You have no todo items.</p>
         ) : filteredTodos.length == 1 ? (
-          <p>{filteredTodos.length} item left</p>
+          <p>{filteredTodos.length} item</p>
         ) : (
-          <p>{filteredTodos.length} items left</p>
+          <p>{filteredTodos.length} items</p>
         )}
       </span>
     </>

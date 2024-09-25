@@ -32,18 +32,19 @@ const Home = () => {
             <li>CSS</li>
             <li>JavaScript</li>
             <li>React</li>
+            <li>Tailwind</li>
             <li>WordPress</li>
           </ul>
         </div>
         <div className="buttons">
-          <a href="mailto: udeozoonyinye02@gmail.com">Contact Me</a>
-          <a className="github" href="https://github.com/GoldieCodes">
-            See my GitHub Repo
+          <a href="mailto: udeozoonyinye02@gmail.com">Email Me</a>
+          <a className="linkedin" href="https://linkedin.com/in/gold-onyinye">
+            Visit my LinkedIn
           </a>
         </div>
       </div>
       <div className="lottie" ref={animation}></div>
-      <p className="footer">I built this website with React</p>
+      <p className="footer">Built with React</p>
     </div>
   )
 }
