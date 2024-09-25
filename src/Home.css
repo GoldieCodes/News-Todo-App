@@ -5,6 +5,8 @@
 }
 
 .home-wrapper {
+  display: grid;
+  align-content: center;
   position: relative;
   height: calc(100vh - 70px);
   animation: gradient-dance 5s infinite;
@@ -34,9 +36,9 @@
   filter: drop-shadow(2px 4px 6px purple);
 }
 .glass {
-  position: absolute;
-  top: 20%;
-  left: 10%;
+  width: min(90%, 600px);
+  position: relative;
+  margin: 0 3em;
   padding: 1em 1em 2em;
   background: rgba(255, 255, 255, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.4);
@@ -55,6 +57,11 @@
 div.intro {
   display: grid;
   gap: 0.3em;
+}
+.intro p {
+  font-weight: 500;
+  font-size: larger;
+  margin-bottom: 0.5em;
 }
 
 @keyframes gradient-dance {

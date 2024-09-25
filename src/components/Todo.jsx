@@ -18,7 +18,7 @@ function Todo() {
   const dragItem = useRef()
   const dragOverItem = useRef()
 
-  const handleEnterKey = e => {
+  const handleEnterKey = (e) => {
     //adds todo item when enter key is pressed
     if (e.key === "Enter") {
       addTodo()
@@ -31,7 +31,7 @@ function Todo() {
     let todoObj = {
       todo: newTodo,
       id: newTodo.replaceAll(" ", "").substring(0, 10),
-      active: true
+      active: true,
     }
     setNewTodo([...todos, todoObj])
     inputValue.current.value = ""
@@ -53,18 +53,18 @@ function Todo() {
     setNewFilter(newTodoArray)
   }
 
-  const deleteTodo = each => {
-    const newList = todos.filter(todo => todo.id !== each.id)
+  const deleteTodo = (each) => {
+    const newList = todos.filter((todo) => todo.id !== each.id)
     setNewTodo(newList)
     setNewFilter(newList)
   }
 
   // the three functions below enable the todo lists to be reordered by dragging
-  const dragStart = position => {
+  const dragStart = (position) => {
     dragItem.current = position
   }
 
-  const dragEnter = position => {
+  const dragEnter = (position) => {
     dragOverItem.current = position
   }
 
@@ -81,11 +81,13 @@ function Todo() {
 
   return (
     <div className="wrapper">
-      {theme === "light" ? (
-        <img src={lightThemeBg} alt="light theme background pic" />
-      ) : (
-        <img src={darkThemeBg} alt="dark theme background pic" />
-      )}
+      <div className="top-image">
+        {theme === "light" ? (
+          <img src={lightThemeBg} alt="light theme background pic" />
+        ) : (
+          <img src={darkThemeBg} alt="dark theme background pic" />
+        )}
+      </div>
       <div className="todo-wrapper">
         <div className="title">
           <h1>TODO</h1>
